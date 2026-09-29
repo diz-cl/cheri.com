@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#fff0f7" />
+  <meta name="description" content="little websites for drawing, playing, focusing and getting distracted ♡" />
+  <title>cheri !! ★</title>
+  <link rel="stylesheet" href="./style.css" />
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="cheri !! ★, back to top"><span class="brand-mark" aria-hidden="true">✳</span><span>cheri !! ★</span></a>
+      <nav aria-label="main navigation"><a href="#explore">explore</a><button class="saved-link" id="savedLink" type="button" aria-pressed="false">♡ saved <span id="savedCount">0</span></button></nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-heading">
+        <div class="hero-copy">
+          <div class="eyebrow">₊˚⊹ cheri !! ★ ⊹˚₊</div>
+          <h1 id="hero-heading">sites i got lost in <em>instead of doing my work</em> ౨ৎ</h1>
+          <p>some fun little websites i found for drawing, playing, focusing or doing absolutely nothing ♡</p>
+        </div>
+        <div class="hero-stickers" aria-label="favourite web finds">
+          <span class="sticker-head">૮꒰ ˶• ༝ •˶꒱ა</span>
+          <span>⋆｡‧˚ʚ picked by diz ɞ˚‧｡⋆</span>
+          <span>♡ scroll around ♡</span>
+        </div>
+      </section>
+
+      <section id="explore" class="explore" aria-labelledby="explore-heading">
+        <div class="section-intro"><div><div class="eyebrow"><span class="tiny-star">✦</span> okayyy now pick one</div><h2 id="explore-heading">where are we going? ౨ৎ <span aria-hidden="true">↘</span></h2><p>search for something or pick whatever mood you are in ♡</p></div><div class="collection-count"><strong id="totalCount">22</strong><span>little sites<br>to look through</span></div></div>
+        <div class="finder">
+          <aside class="filters" aria-label="filters">
+            <div class="filter-heading"><span>✳</span> choose your mood ♡</div>
+            <div class="filter-group"><div class="group-title">01 <span>what kind?</span></div><div class="category-list" id="categories" role="group" aria-label="category"></div></div>
+            <div class="filter-group"><label class="group-title" for="activity">02 <span>what are we doing?</span></label><select id="activity"><option value="all">anything tbh</option><option value="make">make something</option><option value="play">play a little</option><option value="unwind">do nothing</option><option value="focus">actually focus</option></select></div>
+            <div class="filter-group"><div class="group-title">03 <span>how long do you have?</span></div><div class="segmented" id="timeFilter" role="group" aria-label="time available"><button type="button" data-time="all" aria-pressed="true">any</button><button type="button" data-time="quick" aria-pressed="false">5 min</button><button type="button" data-time="long" aria-pressed="false">a while</button></div></div>
+            <label class="check-row"><input type="checkbox" id="quietFilter"><span class="custom-check" aria-hidden="true">✓</span><span>quiet-friendly only<small>works without sound</small></span></label>
+            <button class="reset" type="button" id="resetFilters">clear filters <span aria-hidden="true">↗</span></button>
+          </aside>
+          <div class="results-side">
+            <div class="toolbar"><label class="search-wrap"><span aria-hidden="true">⌕</span><span class="sr-only">search sites</span><input id="search" type="search" autocomplete="off" placeholder="search a site, mood, or activity ♡" /><kbd>/</kbd></label><button type="button" class="surprise" id="surprise">✦ surprise me</button></div>
+            <div class="results-meta"><p id="resultCount" role="status" aria-live="polite"></p><span>every link opens in a new tab ↗</span></div>
+            <div class="cards" id="cards"></div>
+            <div class="empty" id="empty" hidden><span>✳</span><h3>wait theres nothing here 😭</h3><p>try another search or clear the filters ♡</p><button type="button" id="emptyReset">show everything ↗</button></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="closing" aria-label="about this collection"><div>✿</div><p>i kept the ones that were <em>actually fun ♡</em></p><span>save anything you wanna come back to ♡</span></section>
+    </main>
+    <footer><span>cheri !! ★</span><span>collected by diz ⋆ links belong to their creators</span><a href="#top">back to top ↑</a></footer>
+  </div>
+</body>
+</html>
